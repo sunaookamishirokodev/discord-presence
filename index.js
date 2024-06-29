@@ -58,5 +58,4 @@ client.on("ready", async () => {
     }, 1000);
 });
 
-const mySecret = require("./config.token.json");
-client.login(mySecret);
+client.login(require("./config.token.json"));
